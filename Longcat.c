@@ -17,6 +17,12 @@ int main()
     {
     printf("  |       | \n");
     };
+    printf("  /       \\ \n");
+    printf(" /   ____  \\ \n");
+    printf(" |  /    \  | \n");
+    printf(" | |      | | \n");
+    printf("/  |      |  \\ \n");
+    printf("\\__/      \\__/ \n");
     getchar();
 }
             
