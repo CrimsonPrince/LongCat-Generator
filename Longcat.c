@@ -1,6 +1,6 @@
-LongCat Generator
+Generate a long cat, input the length you would like and it will be pasted into a file called longcat.txt
 
-	/\___/\
+    /\___/\
    /       \
   |  #    # |
   \     @   |
@@ -9,6 +9,8 @@ LongCat Generator
   / _______ ___   \
   |_____   \   \__/
    |    \__/
+   |       |
+   |       |
    |       |
    |       |
    |       |
