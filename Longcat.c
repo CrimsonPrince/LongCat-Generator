@@ -1,4 +1,8 @@
 #include <stdio.h>
+#include <stdlib.h>
+
+void writefile(int);
+
 int main()
 {
     int i;
@@ -23,10 +27,43 @@ int main()
     printf("  /       \\ \n");
     printf(" /   ____  \\ \n");
     printf(" |  /    \\  | \n");
-    printf(" | |      | | \n");
-    printf("/  |      |  \\ \n");
+    printf(" |  |      | | \n");
+    printf("/   |      |  \\ \n");
     printf("\\__/      \\__/ \n");
+    
+    writefile(length);
+    
     flushall();
     getchar();
+}
+
+void writefile(int length)
+{
+  FILE * fp;
+  int i;
+    
+  fp = fopen("longcat.txt","w+");
+  
+    fprintf(fp,"   /\\___/\\ \n");
+    fprintf(fp,"  /       \\ \n");
+    fprintf(fp," |  #    # | \n");
+    fprintf(fp," \\     @   | \n");
+    fprintf(fp,"  \\   _|_ / \n");
+    fprintf(fp,"   /      \\______ \n");
+    fprintf(fp,"  / _______ ___  \\ \n");
+    fprintf(fp,"  |_____   \\  \\__/ \n");
+    fprintf(fp,"  |     \\__/ \n");
+    fprintf(fp,"  |       | \n");
+    for(i=0; i < length;i++)
+    {
+    fprintf(fp,"  |       | \n");
+    };
+    fprintf(fp,"  /       \\ \n");
+    fprintf(fp," /   ____  \\ \n");
+    fprintf(fp," |  /    \\  | \n");
+    fprintf(fp," |  |      | | \n");
+    fprintf(fp,"/   |      |  \\ \n");
+    fprintf(fp,"\\__/      \\__/ \n");
+  
 }
             
