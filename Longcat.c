@@ -33,8 +33,8 @@ int main()
     printf("/   |     |  \\ \n");
     printf("\\__/      \\__/ \n");
     
-    
-    printf("Would you like it written to a text file ? y/n");
+    flushall();
+    printf("Would you like it written to a text file ? y/n \n");
     scanf("%c", &option);
     if(option == 'y')
     {
@@ -74,5 +74,6 @@ void writefile(int length)
     fprintf(fp,"/   |      |  \\ \n");
     fprintf(fp,"\\__/       \\__/ \n");
   
+    printf("Longcat has been written to longcat.txt \n");
 }
             
