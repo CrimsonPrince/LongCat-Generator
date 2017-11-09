@@ -7,6 +7,8 @@ int main()
 {
     int i;
     int length;
+    char option;
+    
     printf("Please enter the length of the Long cat you would like \n");
     printf("The minimum length is 240 Characthers \n");
     scanf("%d",&length);
@@ -27,12 +29,19 @@ int main()
     printf("  /       \\ \n");
     printf(" /   ____  \\ \n");
     printf(" |  /    \\  | \n");
-    printf(" |  |      | | \n");
-    printf("/   |      |  \\ \n");
+    printf(" |  |     | | \n");
+    printf("/   |     |  \\ \n");
     printf("\\__/      \\__/ \n");
     
-    writefile(length);
     
+    printf("Would you like it written to a text file ? y/n");
+    scanf("%c", &option);
+    if(option == 'y')
+    {
+       writefile(length);
+    }
+    
+    printf("This program is ending \n");
     flushall();
     getchar();
 }
@@ -63,7 +72,7 @@ void writefile(int length)
     fprintf(fp," |  /    \\  | \n");
     fprintf(fp," |  |      | | \n");
     fprintf(fp,"/   |      |  \\ \n");
-    fprintf(fp,"\\__/      \\__/ \n");
+    fprintf(fp,"\\__/       \\__/ \n");
   
 }
             
